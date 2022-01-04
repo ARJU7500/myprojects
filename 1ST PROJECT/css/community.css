@@ -1,0 +1,331 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+/* navation part */
+nav
+{
+display: flex;
+justify-content: space-between;
+height: 50px;
+background-color: #131313;
+padding: 0px 100px;
+line-height: 50px;
+border-bottom: 3px solid #FFB321;
+position:sticky;
+top: 0px;
+z-index: 100;
+}
+nav ul li
+{
+	list-style: none;
+	display: inline-block;
+	margin: 0px 20px;
+}
+
+nav ul li a
+{
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+}
+nav ul li a:hover
+{
+	color: #FFB321;
+	text-decoration: underline;
+}
+nav h2
+{
+	color: white;
+	letter-spacing: 1px;
+}
+nav h2:hover
+{
+	color: #FFB321;
+}
+.heading
+{
+color: #FFB321;
+}
+nav .icon
+{
+color: white;
+font-size: 20px;
+display: none;
+}
+#checkbtn
+{
+	display: none;
+
+}
+/* .btnav
+{
+	text-decoration: none;
+	border-radius: 25px;
+	color: #ffb321;
+	background-color: transparent;
+	font-weight:bold;
+	border: 2px solid #ffb321;
+	padding: 0px 10px;
+	text-align: center;
+}
+.btnav:hover
+{
+	background-color: #ffb321;
+	color: black;	 
+} */
+
+/*responsive navbar*/
+@media only screen and (max-width :420px)  
+{
+nav .icon
+{
+	line-height: 50px;
+}
+nav
+{
+	padding: 0px 20px;
+	font-size: 20px;
+}
+nav ul
+{
+	position: absolute;
+	top: 50px;
+	background-color: #FFB321;
+	width: 50%;
+	height: 100vh;
+	left: -100%;
+	transition: all 2s;
+
+}
+nav ul li
+{
+	display: block;
+	text-align: center;
+}
+nav ul li a
+{
+	color: black;
+	font-weight: 500;
+}
+nav ul li a:hover
+{
+	text-decoration: underline;
+}
+nav .icon
+{
+display: block;
+position: absolute;
+right: 20px;
+}
+#checkbtn:checked ~ ul
+{
+left: 0px;
+}
+.btnav
+{
+	display: none;
+}
+}
+/* @media only screen and (min-width :421px;) and (max-width: 900px;)
+{
+
+} */
+
+/* section 2 start */
+#section2 marquee
+{
+         padding:15px  0px; 
+        color:white;
+        background-color:#131313;
+        height: 50px;
+	}
+	.in
+	{
+	text-align: right;
+	background-color: #ffb321 ;
+	color:white;
+	height: 50px;
+	}
+#section2 h4
+{
+	line-height: 50px;
+}
+.newsbox
+{
+    padding:5px 7px; 
+    color:white;
+}
+
+/*section 3 start*/
+#section3
+{
+background-image: url("../image/comunity1.jpg");
+height:calc(100vh - 50px);
+width: 100%;
+background-repeat:no-repeat;
+background-size: cover;
+background-position: center;
+}
+#section3 h2
+{
+	color: white;
+	font-size: 50px;
+}
+#section3 p
+{
+	color: white;
+	line-height: ;
+	width: 500px;
+	padding-top: 10px ;
+	font-size: 15px;
+}
+.btn
+{
+	text-decoration: none;
+	border-radius: 25px;
+	color: #ffb321;
+	background-color: transparent;
+	font-weight:bold;
+	/* border: 2px solid #ffb321; */
+}
+.btn:hover
+{
+	background-color: #ffb321;
+	color: black;	 
+}
+.contnt
+{
+	display: flex;
+	align-items: center;
+	height: calc(100vh - 80px);
+	}
+
+/* section 4 start */
+
+#section4
+{
+	background-color: #EFEEEC;
+}
+#section4 h3
+{
+	padding: 100px 0px;
+}
+
+#section4 select
+{
+	padding: 0px 30px;
+	outline: none;
+}
+
+/* section 5 start */
+#section5 
+{
+	background-image: url('../image/community-bg4.jpg');
+width: 100%;
+background-repeat:no-repeat;
+background-size: cover;
+padding: 100px 0px;
+}
+#section5 h5
+{
+ color: #ff205f;
+}
+#section5 h6
+{
+ color:#FFB321 ;
+}
+#section5 p
+{
+ color:white;
+ padding: 10px 0px;
+ font-size: 15px;
+}
+#section5 img
+{
+border-radius: 50%;
+}
+#section5 .box
+{
+	background-color: black;
+	/* background-color: #EFEEEC; */
+	padding: 20px 30px;
+	border-bottom: 10px solid #EFEEEC;
+
+}
+#section5 .cir
+{
+	padding: 40px 0px;
+}
+#section5 h4
+{
+	background-color:#FFB321;
+	border: 2px solid #FFB321;
+	border-radius: 40%;
+	width: 60px;
+	margin-left: 10px;
+}
+#section5 h4:hover
+{
+	background-color: transparent;
+	border: 2px solid #FFB321;
+	color:  black;
+}
+/* section 8 start */
+#section8 
+{
+    padding:100px 0px;
+    background-image: url("../image/pattern.png");
+    height: 685px;
+}
+#section8 .box8
+{
+    background-color: #252525;
+    padding:40px 20px;
+}
+#section8 h3
+{
+	color: white;
+	margin-bottom: 30px;
+}
+#section8 p
+{
+	margin-bottom: 0px;
+	text-align: left;
+	line-height: 20px;
+}
+#section8 .para
+{
+	font-size: 12px;
+}
+
+#section8 .box8 .row
+{
+	padding: 10px 0px;
+}
+
+.yellow
+{
+	color: #FFB321;
+}
+
+/* section 9 start*/
+
+#section9
+{
+	background-color: #131313;
+	height: 30px;
+}
+ #section9 p
+{
+	text-align: center;
+	color: white;
+	line-height: 30px;
+}
+.s6s
+{
+    color:rgba(245, 245, 245, 0.52);
+}
